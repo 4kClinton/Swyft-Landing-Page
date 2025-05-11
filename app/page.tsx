@@ -48,14 +48,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center w-full py-8 px-4 text-center">
         <div className="mb-4">
-          <Image src={swyft} alt="Swyft Logo" className="w-auto h-12" />
+          <Image src={swyft} alt="Swyft Logo" className="w-auto h-12 mb-10 mt-5" />
         </div>
-        <p className="text-sm md:text-base text-gray-800 max-w-md mb-6">
-          Move Anything, Anywhere — Fast, Reliable Bulk Transport Across The Country.
-        </p>
-        <button className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors w-full max-w-xs mb-10">
-          Move Now
-        </button>
+      <p className="text-lg md:text-xl text-gray-600 max-w-md mb-6 font-[Montserrat] font-bold">
+  Move <span className="text-green-500">Anything</span>, <span className="text-green-500">Anywhere</span> — <span className="text-500">Fast</span>, Reliable Bulk Transport Across The Country.
+</p>
+            <a
+              href="https://move.swyft.africa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors w-full max-w-xs mb-10"
+            >
+              Move Now
+            </a>
         <div className="w-full max-w-md mb-16">
           <Image src={trucks} alt="Made to Move" className="w-5/5 h-auto" />
           
@@ -71,9 +76,14 @@ export default function Home() {
               Discover how the Swyft app revolutionizes bulky item, parcel, and moving logistics. Our intuitive
               interface puts you in control, from instant quotes to real-time tracking.
             </p>
-            <button className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors">
-              Get Started
-            </button>
+          <a
+            href="https://move.swyft.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors"
+          >
+            Get Started
+          </a>
           </div>
           <div className="md:w-1/2">
             <Image src={phones} alt="App Preview" className="w-4/5 h-auto" />
@@ -239,9 +249,14 @@ export default function Home() {
       <section className="w-full py-12 px-4 text-center bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">Sign up today.</h2>
-          <button className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors">
+          <a
+            href="https://driver.swyft.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#1a1a1a] text-white py-2 px-6 rounded-md hover:bg-black transition-colors"
+          >
             Get Started
-          </button>
+          </a>
         </div>
       </section>
 
@@ -250,12 +265,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <p className="text-xs">© Barak Labs LTD, 2025</p>
           <div className="flex gap-4">
-            <a href="#" className="text-xs text-blue-400">
+            <a href="tel:0796652112" className="text-xs text-blue-400">
+  Phone
+</a>
+            <a href="https://www.instagram.com/_.swyft._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-xs text-blue-400">
               Instagram
             </a>
-            <a href="#" className="text-xs text-blue-400">
-              Email
-            </a>
+           <a href="mailto:support@swyft.africa" className="text-xs text-blue-400">
+  Email
+</a>
           </div>
         </div>
       </footer>
