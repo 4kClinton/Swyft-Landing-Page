@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useState } from "react";
 import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +18,9 @@ import swyft from "../public/swyft-logo.png";
 import loading from "../public/loading.png";
 import barakLogo from "../public/BARAK LABS.png";
 import barakLogoWord from "../public/Barak LOGO.png";
+import housing from "../public/house3d.png"; // Swyft Housing Illustration
+import agent from "../public/agent2.jpg"; // Swyft Agent Illustration
+
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -25,23 +29,110 @@ export default function Home() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const faqs = [
+  const faqs: { question: string; answer: string | JSX.Element }[] = [
     {
       question: "What is Swyft?",
-      answer:
-        "Swyft is a logistics platform that helps you move anything, anywhere with fast, reliable bulk transport across the country. We specialize in making moving bulky items, parcels, and relocations simple and efficient.",
+      answer: (
+        <>
+          <a
+            href="https://swyft.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            Swyft
+          </a>{" "}
+          is an on-demand logistics platform that helps you move anything, anywhere with fast, reliable bulk
+          transport across the country. We specialize in making moving bulky items, parcels, and relocations simple and efficient.
+        </>
+      ),
     },
     {
       question: "How does it work?",
-      answer:
-        "Simply download our app, enter your pickup and delivery locations, select the type of item you're moving, and get an instant quote. Once you confirm, our drivers will pick up your items and deliver them to the destination with real-time tracking throughout the journey.",
+      answer: (
+        <>
+          Simply visit{" "}
+          <a
+            href="https://move.swyft.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            move.swyft.africa
+          </a>
+          , enter your pickup and delivery locations, select the type of item you're
+          moving, and get an instant quote. Once you confirm, our drivers will pick
+          up your items and deliver them to the destination with real-time tracking
+          throughout the journey.{" "}
+          <br />
+          <br />
+          <strong>Tip:</strong> When prompted, it's best to install the app to your
+          phone or desktop for a faster and smoother experience.
+        </>
+      ),
     },
     {
       question: "What can I ship?",
-      answer:
-        "You can ship almost anything from bulky furniture and appliances to parcels and packages. We also offer specialized services for home relocations. If you're unsure about a specific item, please contact our support team.",
+      answer: (
+        <>
+          You can ship almost anything from bulky furniture and appliances to parcels and
+          packages. We also offer specialized services for full home relocations. If you're unsure
+          about a specific item, please{" "}
+          <a
+            href="mailto:support@swyft.africa"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            contact our support team
+          </a>
+          .
+        </>
+      ),
+    },
+    {
+      question: "What is Swyft Agent?",
+      answer: (
+        <>
+          <a
+            href="https://https://swyft-agent.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            Swyft Agent
+          </a>{" "}
+          is a dashboard for real estate agents and property managers to list available units,
+          manage tenant interactions, track moving notices, and request Swyft drivers for
+          logistics support.
+        </>
+      ),
+    },
+    {
+      question: "What is Swyft Housing?",
+      answer: (
+        <>
+          <a
+            href="https://move.swyft.africa/findhouse"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            Swyft Housing
+          </a>{" "}
+          is a public, scam-free listings board for available rentals posted by verified{" "}
+          <a
+            href="https://agent.swyft.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold underline hover:text-green-800"
+          >
+            Swyft Agents
+          </a>
+          . Anyone can browse listings without needing an account.
+        </>
+      ),
     },
   ];
+  
 
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -50,7 +141,7 @@ export default function Home() {
         <div className="mb-4">
           <Image src={swyft} alt="Swyft Logo" className="w-auto h-12 mb-10 mt-5" />
         </div>
-      <p className="text-lg md:text-xl text-gray-600 max-w-md mb-6 font-[Montserrat] font-bold">
+      <p className="text-3xl md:text-3xl text-gray-600 max-w-mx mb-6 font-[Montserrat] font-black text-left ">
   Move <span className="text-green-500">Anything</span>, <span className="text-green-500">Anywhere</span> — <span className="text-500">Fast</span>, Reliable Bulk Transport Across The Country.
 </p>
             <a
@@ -62,7 +153,7 @@ export default function Home() {
               Move Now
             </a>
         <div className="w-full max-w-md mb-16">
-          <Image src={trucks} alt="Made to Move" className="w-5/5 h-auto" />
+          <Image src={trucks} alt="Made to Move" className="w-5/5 h-auto" priority  />
           
         </div>
       </section>
@@ -86,7 +177,7 @@ export default function Home() {
           </a>
           </div>
           <div className="md:w-1/2">
-            <Image src={phones} alt="App Preview" className="w-4/5 h-auto" />
+            <Image src={phones} alt="App Preview" className="w-4/5 h-auto" priority />
           </div>
         </div>
       </section>
@@ -117,6 +208,7 @@ export default function Home() {
                   src={delivery}
                   alt="Send & Receive Parcels"
                   className="w-full h-full object-cover"
+                  priority
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
@@ -146,6 +238,60 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Swyft Agent & Housing Section */}
+<section className="w-full py-12 px-4 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold mb-10 text-center">
+      More than Moving — <span className="text-green-500">Explore Swyft's Ecosystem</span>
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {/* Swyft Agent */}
+      <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+        <div className="h-56 w-full overflow-hidden">
+          <Image src={agent} alt="Swyft Agent" className="w-full h-full object-cover" priority />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-2">Swyft Agent</h3>
+          <p className="text-gray-600 text-sm mb-4">
+            Designed for real estate agents and property managers, Swyft Agent is your all-in-one dashboard to list properties, manage tenant info, track inquiries, connect and earn from verified movers — all in one platform. 
+          </p>
+          <a
+            href="https://swyft-agent.vercel.app/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold hover:underline"
+          >
+            Visit Swyft Agent →
+          </a>
+        </div>
+      </div>
+
+      {/* Swyft Housing */}
+      <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+        <div className="h-56 w-full overflow-hidden">
+          <Image src={housing} alt="Swyft Housing" className="w-full h-full object-cover" />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-2">Swyft Housing</h3>
+          <p className="text-gray-600 text-sm mb-4">
+            Say goodbye to scams and endless house hunting. Swyft Housing is our verified rentals listing service — browse apartments, rooms, or houses directly posted by vetted agents on the Swyft platform. No login required, no shady deals.
+          </p>
+          <a
+            href="https://move.swyft.africa/findhouse"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-semibold hover:underline"
+          >
+            Explore Listings →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Benefits Section */}
     <section className="w-full bg-gray-50">
