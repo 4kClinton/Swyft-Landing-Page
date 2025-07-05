@@ -202,23 +202,9 @@ export default function Home() {
   </div>
 </div>
 
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col">
-              <div className="w-full h-48 overflow-hidden">
-                <Image
-                  src={delivery}
-                  alt="Send & Receive Parcels"
-                  className="w-full h-full object-cover"
-                  priority
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-               <h3 className="text-lg font-semibold mb-2">Your Parcels, Delivered Smarter</h3>
-<p className="text-gray-600 text-sm">
-  Whether it's a one-time drop or regular deliveries, Swyft gets your parcels where they need to be — reliably, quickly, and with full tracking every step of the way.
-</p>
+           
 
-              </div>
-            </div>
+            
             <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col">
               <div className="w-full h-48 overflow-hidden">
                 <Image
