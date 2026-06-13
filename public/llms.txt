@@ -1,0 +1,40 @@
+# Swyft
+
+> Swyft is a housing + moving super-app for Nairobi, Kenya. "Find a Home. Move In. All in One App." It turns house hunting into a short-form video feed and connects you to trusted movers — all in one app.
+
+## How housing works (the core hook)
+- **Discover:** A "For You" video feed of short property tours, filmed by verified Scouts. Personalised to your interests (House Hunting, Furniture, Appliances, Building & Construction).
+- **Save:** Add the homes you like to your Bucket List.
+- **Unlock:** Pay a small viewing fee (6% of the monthly rent) to unlock verified details — building name, directions, caretaker's phone, deposit and availability.
+- **View:** Go and view the property yourself. Scouts and customers never meet — trust comes from KYC verification, ratings, and listing-freshness checks. No agents, no scams, no wasted trips.
+- Browsing and saving in the feed is free.
+
+## Moving (the Move tab)
+- **Transport:** Book a single vehicle — Van, Mini Truck, Pickup, Car Rescue (towing), 5T Lorry, 10T Lorry, or boda.
+- **Moving packages by home size:** Studio → 5+ bedroom, each bundled with the right truck and loaders.
+- Upfront pricing, live driver tracking, M-Pesa or cash, and scheduled moves.
+
+## Become a Scout (the content engine)
+KYC-verified locals film up to 90-second property tours, earn for every approved upload, and keep 90% of every viewing fee on properties they filmed, withdrawn to M-Pesa. Apply inside the app.
+
+## Drive with Swyft
+Verified drivers go online, accept nearby orders, navigate, and get paid — managing earnings and an 18% platform commission via M-Pesa in-app.
+
+## Swyft for Business (business.swyft.africa)
+A web dashboard for companies: book verified trucks with live GPS tracking, manage every delivery in one place, and receive monthly KRA TIMS-compliant invoices — from around KES 4,500 per trip, with no fixed fleet costs. Runs on the same driver network as the app.
+
+## Key facts
+- Market: Nairobi, Kenya (and metro)
+- Platforms: iOS (App Store) and Android (Google Play); free to download
+- Payments: M-Pesa and cash (KES)
+- Company: Barak Labs LTD
+- Support: support@swyft.africa · 0796 652 112
+- Languages: English, Swahili
+
+## Links
+- Web app: https://move.swyft.africa
+- Find housing on web: https://move.swyft.africa/findhouse
+- Swyft for Business: https://business.swyft.africa
+- Drive with Swyft: https://driver.swyft.africa/signup
+- Terms & Conditions: https://swyft.africa/terms
+- Privacy Policy: https://swyft.africa/privacy

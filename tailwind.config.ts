@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-bricolage)", "var(--font-inter)", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -43,15 +47,35 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // ── Swyft brand ──────────────────────────────────────────────
+        brand: {
+          DEFAULT: "#00C853", // brand emerald — fills, glows
+          strong: "#00A846", // button fills (white text reads clean)
+          ink: "#057A3A", // green TEXT on white (WCAG AA)
+          400: "#34D27B",
+          100: "#DCF6E6",
+          50: "#F1FBF5",
+        },
+        ink: {
+          DEFAULT: "#0A0A0A",
+          soft: "#5B6168",
+        },
+        mint: "#F4FBF7",
+        // legacy aliases (kept so stray refs don't break)
         green: {
-          400: "#4ade80",
-          500: "#00c853",
+          400: "#34D27B",
+          500: "#00C853",
         },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        soft: "0 8px 30px rgba(0,0,0,0.06)",
+        "soft-lg": "0 24px 60px rgba(0,0,0,0.10)",
+        glow: "0 10px 40px rgba(0,200,83,0.30)",
       },
     },
   },
