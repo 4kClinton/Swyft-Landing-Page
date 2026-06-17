@@ -731,6 +731,7 @@ export default function Home() {
                 <div className="flex flex-col gap-3">
                   <Link href="/terms" className="text-ink-soft hover:text-ink transition-colors cursor-pointer">Terms &amp; Conditions</Link>
                   <Link href="/privacy" className="text-ink-soft hover:text-ink transition-colors cursor-pointer">Privacy Policy</Link>
+                  <Link href="/delete-account" className="text-ink-soft hover:text-ink transition-colors cursor-pointer">Delete Account</Link>
                 </div>
               </div>
               <div>

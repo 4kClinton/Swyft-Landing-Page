@@ -10,16 +10,16 @@ export default function TermsPage() {
   return (
     <LegalShell
       title="Terms & Conditions"
-      updated="13 June 2026"
+      updated="17 June 2026"
       intro="These Terms & Conditions govern your access to and use of the Swyft app, website, and services operated by Barak Labs LTD. By creating an account or using Swyft, you agree to these terms."
     >
       <Section heading="1. About Swyft">
         <p>
           Swyft is a platform operated by Barak Labs LTD (&quot;Swyft&quot;,
           &quot;we&quot;, &quot;us&quot;) that connects people looking for housing
-          and moving services with verified property agents and independent
+          and moving services with Scout-filmed property videos and independent
           drivers across Kenya. Swyft provides the technology that connects
-          users; it does not own the properties listed or operate the vehicles
+          users; it does not own the properties shown or operate the vehicles
           used for moves.
         </p>
       </Section>
@@ -33,21 +33,23 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section heading="3. Housing listings">
+      <Section heading="3. Housing videos & viewing fees">
         <ul>
           <li>
-            Listings are posted by verified Swyft Agents. While we verify agents,
-            we do not guarantee the accuracy, availability, or condition of any
-            individual property.
+            Property videos are filmed by KYC-verified Swyft Scouts. While we
+            verify Scouts and run freshness checks, we do not guarantee the
+            accuracy, availability, or condition of any individual property.
+          </li>
+          <li>
+            Browsing the feed is free. Paying a viewing fee unlocks verified
+            property details so you can view the property yourself; it does not
+            reserve the property or create any tenancy.
           </li>
           <li>
             You are responsible for inspecting a property and confirming all
-            details directly with the agent before making any payment or
-            commitment.
-          </li>
-          <li>
-            Swyft is not a party to any rental or tenancy agreement entered into
-            between you and a landlord or agent.
+            details before making any further payment or commitment. Swyft is not
+            a party to any rental or tenancy agreement entered into between you
+            and a landlord.
           </li>
         </ul>
       </Section>
@@ -73,14 +75,25 @@ export default function TermsPage() {
 
       <Section heading="5. Payments">
         <p>
-          Payment for services is made through the methods made available in the
-          app. You agree to pay all charges associated with your bookings.
-          Refunds, where applicable, are handled according to our cancellation
-          and refund guidelines communicated at the time of booking.
+          Payment for services and viewing fees is made through the methods made
+          available in the app, such as M-Pesa. You agree to pay all charges
+          associated with your bookings. Refunds, where applicable, are handled
+          according to our cancellation and refund guidelines communicated at the
+          time of booking.
         </p>
       </Section>
 
-      <Section heading="6. Acceptable use">
+      <Section heading="6. Your data & privacy">
+        <p>
+          Your use of Swyft also involves the collection and use of personal
+          data, including your contact details, location, and payment activity.
+          How we collect, share, and protect this data — and how you can request
+          its deletion — is described in our{" "}
+          <a href="/privacy">Privacy Policy</a>, which forms part of these terms.
+        </p>
+      </Section>
+
+      <Section heading="7. Acceptable use">
         <p>You agree not to:</p>
         <ul>
           <li>Use Swyft for any unlawful or fraudulent purpose;</li>
@@ -93,7 +106,7 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section heading="7. Limitation of liability">
+      <Section heading="8. Limitation of liability">
         <p>
           To the maximum extent permitted by law, Swyft and Barak Labs LTD are
           not liable for any indirect, incidental, or consequential damages
@@ -103,7 +116,7 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section heading="8. Changes to these terms">
+      <Section heading="9. Changes to these terms">
         <p>
           We may update these terms from time to time. We will post the updated
           version here with a new &quot;last updated&quot; date. Continued use of
@@ -112,7 +125,7 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section heading="9. Governing law">
+      <Section heading="10. Governing law">
         <p>
           These terms are governed by the laws of the Republic of Kenya. Any
           disputes will be subject to the exclusive jurisdiction of the Kenyan
@@ -120,7 +133,7 @@ export default function TermsPage() {
         </p>
       </Section>
 
-      <Section heading="10. Contact">
+      <Section heading="11. Contact">
         <p>
           For any questions about these terms, contact us at{" "}
           <a href="mailto:support@swyft.africa">support@swyft.africa</a>.
