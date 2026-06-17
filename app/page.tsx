@@ -757,7 +757,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-border">
-            <p className="text-ink-soft text-xs">© {new Date().getFullYear()} Barak Labs LTD. All rights reserved.</p>
+            <p className="text-ink-soft text-xs">© {new Date().getFullYear()} Taleel Holdings LTD.. All rights reserved.</p>
             <div className="flex items-center gap-2 opacity-50">
               <Image src={barakLogoWord} alt="Barak Labs" className="h-4 w-auto" />
               <Image src={barakLogo} alt="" className="h-6 w-auto" aria-hidden="true" />

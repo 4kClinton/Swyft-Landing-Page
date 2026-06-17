@@ -27,7 +27,7 @@ A web dashboard for companies: book verified trucks with live GPS tracking, mana
 - Market: Nairobi, Kenya (and metro)
 - Platforms: iOS (App Store) and Android (Google Play); free to download
 - Payments: M-Pesa and cash (KES)
-- Company: Barak Labs LTD
+- Company: Taleel Holdings LTD.
 - Support: support@swyft.africa · 0796 652 112
 - Languages: English, Swahili
 

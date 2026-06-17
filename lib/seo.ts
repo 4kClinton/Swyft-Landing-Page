@@ -56,7 +56,7 @@ const organization = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: "Swyft",
-  legalName: "Barak Labs LTD",
+  legalName: "Taleel Holdings LTD.",
   url: SITE_URL,
   logo: `${SITE_URL}/swyft-logo.png`,
   description:

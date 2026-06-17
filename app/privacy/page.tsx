@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <LegalShell
       title="Privacy Policy"
       updated="17 June 2026"
-      intro="This Privacy Policy explains what data Swyft collects, why we collect it, who we share it with, and how we keep it safe. It is written to match the data we disclose on our Google Play and App Store listings, and to comply with Kenya's Data Protection Act, 2019. Swyft is operated by Barak Labs LTD."
+      intro="This Privacy Policy explains what data Swyft collects, why we collect it, who we share it with, and how we keep it safe. It is written to match the data we disclose on our Google Play and App Store listings, and to comply with Kenya's Data Protection Act, 2019. Swyft is operated by Taleel Holdings LTD.."
     >
       <Section heading="1. Data we collect">
         <p>

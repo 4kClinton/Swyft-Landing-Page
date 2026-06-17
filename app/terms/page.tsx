@@ -11,11 +11,11 @@ export default function TermsPage() {
     <LegalShell
       title="Terms & Conditions"
       updated="17 June 2026"
-      intro="These Terms & Conditions govern your access to and use of the Swyft app, website, and services operated by Barak Labs LTD. By creating an account or using Swyft, you agree to these terms."
+      intro="These Terms & Conditions govern your access to and use of the Swyft app, website, and services operated by Taleel Holdings LTD.. By creating an account or using Swyft, you agree to these terms."
     >
       <Section heading="1. About Swyft">
         <p>
-          Swyft is a platform operated by Barak Labs LTD (&quot;Swyft&quot;,
+          Swyft is a platform operated by Taleel Holdings LTD. (&quot;Swyft&quot;,
           &quot;we&quot;, &quot;us&quot;) that connects people looking for housing
           and moving services with Scout-filmed property videos and independent
           drivers across Kenya. Swyft provides the technology that connects
@@ -108,7 +108,7 @@ export default function TermsPage() {
 
       <Section heading="8. Limitation of liability">
         <p>
-          To the maximum extent permitted by law, Swyft and Barak Labs LTD are
+          To the maximum extent permitted by law, Swyft and Taleel Holdings LTD. are
           not liable for any indirect, incidental, or consequential damages
           arising from your use of the platform or from interactions with agents,
           landlords, or drivers. Our total liability for any claim is limited to

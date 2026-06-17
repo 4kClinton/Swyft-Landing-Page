@@ -29,7 +29,7 @@ export default function DeleteAccountPage() {
     <LegalShell
       title="Delete your account"
       updated="17 June 2026"
-      intro="You can ask us to delete your Swyft account and the personal data associated with it at any time. This page explains how to request deletion, what is removed, and what we may be required to keep. Swyft is operated by Barak Labs LTD."
+      intro="You can ask us to delete your Swyft account and the personal data associated with it at any time. This page explains how to request deletion, what is removed, and what we may be required to keep. Swyft is operated by Taleel Holdings LTD.."
     >
       <Section heading="1. Delete from within the app">
         <p>
