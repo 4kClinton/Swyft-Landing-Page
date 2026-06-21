@@ -27,6 +27,7 @@ const APP_STORE_URL = "#";
 const FIND_HOUSING_URL = "https://move.swyft.africa/findhouse";
 const DRIVER_URL = "https://driver.swyft.africa/signup";
 const BUSINESS_URL = "https://business.swyft.africa";
+const AGENT_URL = "https://agent.swyft.africa";
 
 // ── Brand glyphs (Lucide has no store logos) ─────────────────────────────────
 function AppleGlyph({ className = "" }: { className?: string }) {
@@ -632,6 +633,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Section 8b · Swyft Agent (landlords & property managers) ──────── */}
+      <section className="w-full pb-24 sm:pb-28 px-5 sm:px-6">
+        <div className="max-w-6xl mx-auto bg-mint rounded-[32px] px-6 sm:px-12 py-14 sm:py-16 border border-border">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <Reveal delay={100} className="order-2 lg:order-1 grid grid-cols-2 gap-3">
+              {[
+                { Icon: Video, t: "List once", d: "Verified creators film your vacant unit" },
+                { Icon: HomeIcon, t: "Fill faster", d: "Reach renters who are actually moving" },
+                { Icon: Banknote, t: "Keep your paybill", d: "M-Pesa, Equity, Co-op, KCB — money never moves through us" },
+                { Icon: Receipt, t: "Get paid cleaner", d: "Auto-matched payments, receipts & arrears" },
+              ].map(({ Icon, t, d }) => (
+                <div key={t} className="bg-white border border-border rounded-2xl p-5">
+                  <Icon className="w-5 h-5 text-brand-ink mb-3" />
+                  <p className="font-semibold text-sm text-ink">{t}</p>
+                  <p className="text-ink-soft text-[13px] leading-snug mt-0.5">{d}</p>
+                </div>
+              ))}
+            </Reveal>
+
+            <Reveal className="order-1 lg:order-2">
+              <Eyebrow>Swyft Agent</Eyebrow>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl tracking-[-0.02em] text-ink mb-4">
+                List once. Fill faster.<br />Get paid cleaner.
+              </h2>
+              <p className="text-ink-soft text-lg leading-relaxed mb-7 max-w-md">
+                Built for Kenyan landlords &amp; property managers. Put your
+                vacant unit in front of verified renters who are actually
+                moving — and let Swyft run rent collection, invoices and
+                receipts on the M-Pesa paybill you already use.
+              </p>
+              <a
+                href={AGENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-green inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full cursor-pointer"
+              >
+                List your property <ArrowRight className="w-4 h-4" />
+              </a>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ (AEO — answers AI engines can cite) ──────────────────────── */}
       <section className="w-full pb-24 sm:pb-28 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
@@ -715,6 +759,7 @@ export default function Home() {
                     { label: "Download App", href: "#download", external: false },
                     { label: "Find Housing", href: FIND_HOUSING_URL, external: true },
                     { label: "Swyft for Business", href: BUSINESS_URL, external: true },
+                    { label: "List your property", href: AGENT_URL, external: true },
                     { label: "Drive with Swyft", href: DRIVER_URL, external: true },
                   ].map(({ label, href, external }) =>
                     external ? (

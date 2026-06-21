@@ -23,6 +23,9 @@ Verified drivers go online, accept nearby orders, navigate, and get paid — man
 ## Swyft for Business (business.swyft.africa)
 A web dashboard for companies: book verified trucks with live GPS tracking, manage every delivery in one place, and receive monthly KRA TIMS-compliant invoices — from around KES 4,500 per trip, with no fixed fleet costs. Runs on the same driver network as the app.
 
+## Swyft Agent (agent.swyft.africa)
+The web app for Kenyan landlords and property managers: "List once. Fill faster. Get paid cleaner." List a vacant unit to verified, move-ready renters (verified creators film it — no recycled photos), and run rent collection on the M-Pesa paybill or bank account you already use (M-Pesa, Equity, Co-op, KCB). Payments are auto-matched by phone number, with receipts, invoices, arrears tracking and tenant statements generated automatically. Money never moves through Swyft — it reads bank notifications, so owners keep their paybill and how tenants pay.
+
 ## Key facts
 - Market: Nairobi, Kenya (and metro)
 - Platforms: iOS (App Store) and Android (Google Play); free to download
@@ -32,9 +35,9 @@ A web dashboard for companies: book verified trucks with live GPS tracking, mana
 - Languages: English, Swahili
 
 ## Links
-- Web app: https://move.swyft.africa
-- Find housing on web: https://move.swyft.africa/findhouse
 - Swyft for Business: https://business.swyft.africa
-- Drive with Swyft: https://driver.swyft.africa/signup
+- Swyft Agent (landlords & property managers): https://agent.swyft.africa
+- App download (iOS & Android): coming soon — links to be added at launch
 - Terms & Conditions: https://swyft.africa/terms
+- Driver Partner Agreement: https://swyft.africa/driver-terms
 - Privacy Policy: https://swyft.africa/privacy

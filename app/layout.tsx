@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   ],
   applicationName: "Swyft",
   alternates: { canonical: "/" },
+  icons: {
+    icon: "/logo-white-border.png",
+    shortcut: "/logo-white-border.png",
+    apple: "/logo-white-border.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_KE",

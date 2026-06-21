@@ -46,6 +46,10 @@ export const faqs: Faq[] = [
     a: "Yes. Swyft for Business lets companies book verified trucks with live GPS tracking, manage every delivery in one dashboard, and receive monthly KRA-compliant invoices — from around KES 4,500 a trip, with no fixed fleet costs. It runs on the same driver network as the consumer app.",
   },
   {
+    q: "How can landlords or property managers list a property on Swyft?",
+    a: "Swyft Agent (agent.swyft.africa) is built for Kenyan landlords and property managers. You list a vacant unit once, verified creators film it, and it reaches renters who are actually moving. Swyft also runs rent collection on the M-Pesa paybill or bank account you already use — auto-matching payments and generating receipts, invoices and arrears statements. Money never moves through Swyft; it reads your bank notifications, so you keep your paybill and how tenants pay.",
+  },
+  {
     q: "Is the Swyft app free, and what areas does it cover?",
     a: "The app is free to download on both Android and iPhone, and browsing the feed is free. Swyft operates across Nairobi and its metro area — Kilimani, Westlands, Kasarani, Ruaka, Rongai and surrounding neighbourhoods.",
   },
@@ -137,6 +141,15 @@ export const homepageLd = {
       areaServed: { "@type": "City", name: "Nairobi" },
       description:
         "Book vetted movers in Nairobi with upfront pricing and live driver tracking. Move furniture, relocate a home, or send business deliveries.",
+    },
+    {
+      "@type": "Service",
+      name: "Swyft Agent — list rentals & collect rent in Kenya",
+      serviceType: "Property listing and rent collection",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      areaServed: { "@type": "City", name: "Nairobi" },
+      description:
+        "For Kenyan landlords and property managers. List vacant units to verified, move-ready renters and run rent collection on the M-Pesa paybill or bank account you already use — auto-matched payments, receipts, invoices and arrears statements. Money never moves through Swyft.",
     },
     {
       "@type": "FAQPage",
