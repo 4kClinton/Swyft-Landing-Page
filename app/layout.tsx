@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Swyft — Find a Home & Book a Mover in Nairobi | All in One App",
   description:
-    "Swyft is the housing + moving app for Nairobi. Swipe a video feed of Scout-verified homes, unlock the details, and book trusted movers — all in one app.",
+    "Swyft is the housing + moving app for Nairobi. Swipe a video feed of real , verified homes, unlock the details, and book trusted movers — all in one app.",
   keywords: [
     "houses for rent in Nairobi",
     "verified rentals Nairobi",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Swyft",
     title: "Swyft — Find a Home & Book a Mover in Nairobi",
     description:
-      "Swipe a video feed of Scout-verified homes, unlock the details, and book trusted movers — all in one app. Across Nairobi.",
+      "Swipe a video feed of Real , verified homes, unlock the details, and book trusted movers — all in one app. Across Nairobi.",
     images: [
       {
         url: "/young-couple.jpg",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Swyft — Find a Home & Book a Mover in Nairobi",
     description:
-      "Swipe a video feed of Scout-verified homes, unlock the details, and book trusted movers — all in one app.",
+      "Swipe a video feed of Real , verified homes, unlock the details, and book trusted movers — all in one app.",
     images: ["/young-couple.jpg"],
   },
   other: {

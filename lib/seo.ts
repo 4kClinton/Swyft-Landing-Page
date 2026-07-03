@@ -2,7 +2,13 @@
 // Everything an answer engine (Google AI Overviews, ChatGPT, Gemini, Perplexity)
 // needs to understand and cite Swyft. Nairobi-focused.
 
-export const SITE_URL = "https://swyft.africa";
+// NOTE: Vercel serves the site on the `www` host — the apex (https://swyft.africa)
+// 307-redirects to https://www.swyft.africa. Canonical, sitemap, robots host and all
+// JSON-LD @ids must point at the host that returns 200 (www), otherwise we declare a
+// canonical URL that immediately redirects away — a contradictory signal to crawlers.
+// If you'd rather canonicalize on the bare apex, flip Vercel's primary domain to the
+// apex (so www → apex) and change this back to "https://swyft.africa".
+export const SITE_URL = "https://www.swyft.africa";
 export const SUPPORT_EMAIL = "support@swyft.africa";
 export const SUPPORT_PHONE = "+254796652112";
 
@@ -112,7 +118,7 @@ export const homepageLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "KES" },
       publisher: { "@id": `${SITE_URL}/#organization` },
       description:
-        "Find a home and move into it, all in one app. Swipe a video feed of Scout-verified Nairobi properties, unlock the details, and book trusted movers with upfront pricing and live tracking.",
+        "Find a home and move into it, all in one app. Swipe a video feed of real , verified Nairobi properties, unlock the details, and book trusted movers with upfront pricing and live tracking.",
       ...(APP_RATING_COUNT > 0
         ? {
             aggregateRating: {
