@@ -16,7 +16,10 @@ export function GET() {
       details: [
         {
           appID: `${APPLE_TEAM_ID}.com.swyft.africa`,
-          paths: ["/listing/*"],
+          // /listing/* — shared listings; /scout/* — invite-only agent onboarding
+          // deep link (account-page card stays hidden in prod). Android side lives
+          // in swyft-customer app.config.js intentFilters.
+          paths: ["/listing/*", "/scout/*"],
         },
       ],
     },
