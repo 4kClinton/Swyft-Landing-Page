@@ -5,7 +5,7 @@ import {
   Home as HomeIcon, Sofa, Plug, HardHat, Truck, Navigation, Wallet,
   CalendarClock, Video, Upload, Smartphone, FileText, Receipt,
   Sparkles, ShieldCheck, MapPin, ChevronDown,
-  Phone, Mail, Instagram, Banknote,
+  Phone, Mail, Instagram, Banknote, X,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,10 +19,12 @@ import driver1 from "../public/driver.jpg";
 import driver2 from "../public/dereva.jpg";
 import barakLogo from "../public/BARAK LABS.png";
 import barakLogoWord from "../public/Barak LOGO.png";
+import googlePlayBadge from "../public/google-play-badge.png";
 
 // ── Real destinations ────────────────────────────────────────────────────────
-// TODO: replace "#" with the real store links once available.
-const PLAY_STORE_URL = "#";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.swyft.africa&pcampaignid=web_share";
+// iOS app not published yet — the Apple button shows a "coming soon" popup.
 const APP_STORE_URL = "#";
 const FIND_HOUSING_URL = "https://move.swyft.africa/findhouse";
 const DRIVER_URL = "https://driver.swyft.africa/signup";
@@ -34,16 +36,6 @@ function AppleGlyph({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
       <path d="M16.365 1.43c0 1.14-.42 2.21-1.13 3.02-.86.98-2.25 1.74-3.39 1.65-.14-1.1.41-2.27 1.06-3.01.74-.85 2.05-1.5 3.18-1.56.01.07.01.14.01.21l.27-.31zM20.5 17.18c-.55 1.27-.81 1.84-1.52 2.96-.99 1.56-2.39 3.51-4.13 3.52-1.54.02-1.94-1-4.03-.99-2.09.01-2.53.99-4.07.97-1.74-.02-3.07-1.78-4.06-3.34C.06 16.91-.21 11.9 1.5 9.27c.84-1.3 2.17-2.12 3.6-2.12 1.45 0 2.36.99 3.56.99 1.16 0 1.87-.99 3.55-.99 1.27 0 2.61.69 3.57 1.88-3.14 1.72-2.63 6.2.72 8.15z" />
-    </svg>
-  );
-}
-function PlayGlyph({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <path d="M3.6 2.3c-.3.2-.5.6-.5 1.1v17.2c0 .5.2.9.5 1.1l9.4-9.7-9.4-9.7z" fill="#34D27B" />
-      <path d="M17 8.8l-3.8-2.2L4.4 1.9c-.3-.2-.6-.2-.8-.1L13 11.1 17 8.8z" fill="#00C853" />
-      <path d="M17 15.2l-4-2.3-9.4 9.3c.2.1.5.1.8-.1l8.8-5 3.8-1.9z" fill="#057A3A" />
-      <path d="M17 8.8l-4 2.3 4 2.1 3.4-1.9c.7-.4.7-1.4 0-1.8L17 8.8z" fill="#34D27B" />
     </svg>
   );
 }
@@ -82,35 +74,81 @@ function Reveal({
 
 // ── Store buttons ────────────────────────────────────────────────────────────
 function StoreButtons({ className = "" }: { className?: string }) {
+  const [iosSoon, setIosSoon] = useState(false);
   return (
-    <div className={`flex flex-col sm:flex-row gap-3 ${className}`}>
-      <a
-        href={APP_STORE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-dark inline-flex items-center gap-3 text-white pl-4 pr-5 py-3 rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-        aria-label="Download Swyft on the App Store"
-      >
-        <AppleGlyph className="w-6 h-6" />
-        <span className="text-left leading-tight">
-          <span className="block text-[10px] text-white/60">Download on the</span>
-          <span className="block text-sm font-semibold -mt-0.5">App Store</span>
-        </span>
-      </a>
-      <a
-        href={PLAY_STORE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-dark inline-flex items-center gap-3 text-white pl-4 pr-5 py-3 rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-        aria-label="Get Swyft on Google Play"
-      >
-        <PlayGlyph className="w-5 h-5" />
-        <span className="text-left leading-tight">
-          <span className="block text-[10px] text-white/60">Get it on</span>
-          <span className="block text-sm font-semibold -mt-0.5">Google Play</span>
-        </span>
-      </a>
-    </div>
+    <>
+      <div className={`flex flex-col sm:flex-row items-center gap-3 ${className}`}>
+        <button
+          type="button"
+          onClick={() => setIosSoon(true)}
+          className="btn-dark inline-flex items-center gap-3 text-white pl-4 pr-5 h-[52px] rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+          aria-label="Swyft for iPhone — coming soon to the App Store"
+        >
+          <AppleGlyph className="w-6 h-6" />
+          <span className="text-left leading-tight">
+            <span className="block text-[10px] text-white/60">Coming soon to the</span>
+            <span className="block text-sm font-semibold -mt-0.5">App Store</span>
+          </span>
+        </button>
+        <a
+          href={PLAY_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex h-[52px] rounded-2xl cursor-pointer transition-transform hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+          aria-label="Get Swyft on Google Play"
+        >
+          <Image
+            src={googlePlayBadge}
+            alt="Get it on Google Play"
+            className="h-full w-auto"
+            priority
+          />
+        </a>
+      </div>
+
+      {iosSoon && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-5"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="ios-soon-title"
+          onClick={() => setIosSoon(false)}
+        >
+          <div className="absolute inset-0 bg-ink/60 backdrop-blur-sm" aria-hidden="true" />
+          <div
+            className="relative w-full max-w-sm bg-white rounded-3xl shadow-soft-lg p-7 text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setIosSoon(false)}
+              className="absolute top-3.5 right-3.5 w-9 h-9 inline-flex items-center justify-center rounded-full text-ink/50 hover:bg-ink/5 hover:text-ink cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-ink text-white inline-flex items-center justify-center">
+              <AppleGlyph className="w-7 h-7" />
+            </div>
+            <h3 id="ios-soon-title" className="font-display font-semibold text-xl text-ink">
+              Coming soon to iPhone
+            </h3>
+            <p className="mt-2 text-sm text-ink/70">
+              The Swyft iOS app is on its way. In the meantime, it&apos;s live on Android — grab it on Google Play today.
+            </p>
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex h-[52px] rounded-2xl cursor-pointer transition-transform hover:scale-[1.02]"
+              onClick={() => setIosSoon(false)}
+            >
+              <Image src={googlePlayBadge} alt="Get it on Google Play" className="h-full w-auto" />
+            </a>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
