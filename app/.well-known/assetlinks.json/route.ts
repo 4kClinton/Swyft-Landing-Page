@@ -11,6 +11,9 @@ export const dynamic = "force-static"
 const DEFAULT_FINGERPRINTS = [
   "80:3A:AC:F0:25:CD:B9:D6:7F:22:FF:03:7F:89:04:B3:0F:C1:89:DA:05:D5:2C:95:62:F6:FF:FC:12:B5:5C:A3",
   "3B:25:42:65:72:29:2E:36:87:FB:E5:21:FE:30:43:4A:1A:AF:AB:C1:08:4E:72:51:A2:28:3F:85:57:D7:60:C5",
+  // Dev/internal build signing cert — lets sideloaded (non-Play) test builds
+  // pass App Links verification too. Safe to remove once testing is done.
+  "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
 ].join(",")
 
 const FINGERPRINTS = (process.env.ANDROID_SHA256 || DEFAULT_FINGERPRINTS)
